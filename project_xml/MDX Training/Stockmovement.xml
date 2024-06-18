@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.atscale.com/xsd/project_2_0" name="Stockmovement" version="2" xsi:schemaLocation="http://www.atscale.com/xsd/project_2_0 ../../../../../core/src/main/resources/com/atscale/engine/schema/project_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <annotations>
+    <annotation name="migrationVersion">2023.4.1.6713</annotation>
+    <annotation name="version">11</annotation>
+    <annotation name="engineId">1693e8c5-550f-4bf0-59ef-63453833cfdf</annotation>
+    <annotation name="versionTag"></annotation>
+    <annotation name="publishDate">Published on Mar 14, 2024 at 4:00pm (UTC)</annotation>
+  </annotations>
+  <properties>
+    <caption>Stockmovement</caption>
+    <visible>true</visible>
+    <aggressive-aggregate-promotion>false</aggressive-aggregate-promotion>
+    <aggregate-prediction>
+      <speculative-aggregates>false</speculative-aggregates>
+    </aggregate-prediction>
+    <preferred-aggregate-stores></preferred-aggregate-stores>
+  </properties>
+  <attributes>
+    <attribute-key id="9377052b-c91e-4f13-ac1a-239045d21853">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="d99488d0-38c3-4664-a646-1971a1e43a66">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="3d6b3bc7-9eb1-4f04-b937-51583ce5a15c">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="38512a26-4837-484f-8eda-9f12e1828c38">
+      <properties>
+        <visible>true</visible>
+        <columns>2</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="4b588c23-bf60-4220-9698-7bf3dd8c33c3">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="a4e761d5-c06b-4e57-b48a-f953a9d53132">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="c2ceccc2-ad8d-40a0-8e94-0296c0be69e6">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="10786a08-77d6-4d7f-be63-29a1e52fa099">
+      <properties>
+        <visible>true</visible>
+        <columns>2</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="88cd7cc2-dda0-4bb8-bebb-139b9eefeacd">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="faeb83fa-0769-4f6a-b18b-1f3fe3d04069">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="11e475eb-bd2f-4e84-916a-e624f8bf6154">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="c2d17d23-429d-46cf-b57c-6fe9f8b6f0c6">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="2fbc746b-97ba-4203-a230-29312a0eba0f">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="69ad4074-a4f9-486d-8d08-fac57ce6d402">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="80fc6081-3161-4a25-b32c-e32cc081213f">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <keyed-attribute id="2980857d-bd87-4b13-7488-9652cc6a32d0" key-ref="9377052b-c91e-4f13-ac1a-239045d21853" name="Date">
+      <properties>
+        <caption>Date</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="4b588c23-bf60-4220-9698-7bf3dd8c33c3"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="f3ab70bd-266c-4b46-6bdb-35e04da0d7c6" key-ref="d99488d0-38c3-4664-a646-1971a1e43a66" name="Year">
+      <properties>
+        <caption>Year</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="c2ceccc2-ad8d-40a0-8e94-0296c0be69e6"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="4b3b16dc-de40-40b7-4e25-78117564c89d" key-ref="3d6b3bc7-9eb1-4f04-b937-51583ce5a15c" name="SuperTopLevel">
+      <properties>
+        <caption>SuperTopLevel</caption>
+        <visible>false</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="630fa58f-2d94-4fa5-637c-13df54fbf596" key-ref="38512a26-4837-484f-8eda-9f12e1828c38" name="Month">
+      <properties>
+        <caption>Month</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="a4e761d5-c06b-4e57-b48a-f953a9d53132"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="d391ac9d-3c81-415b-7e76-703766107d88" key-ref="10786a08-77d6-4d7f-be63-29a1e52fa099" name="d_englishmonthname">
+      <properties>
+        <caption>Month</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="88cd7cc2-dda0-4bb8-bebb-139b9eefeacd"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="4f6b0f73-b63a-47d1-7094-bd58b6ec6b65" key-ref="faeb83fa-0769-4f6a-b18b-1f3fe3d04069" name="d_calendaryear">
+      <properties>
+        <caption>Year</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="11e475eb-bd2f-4e84-916a-e624f8bf6154"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="c98ab5a4-64f5-4b6f-549c-77357129cd2d" key-ref="c2d17d23-429d-46cf-b57c-6fe9f8b6f0c6" name="d_MATERIAL">
+      <properties>
+        <caption>Material</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="2fbc746b-97ba-4203-a230-29312a0eba0f"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="9b964d8f-8ad1-4930-55ea-8338d8521dd6" key-ref="69ad4074-a4f9-486d-8d08-fac57ce6d402" name="Date1">
+      <properties>
+        <caption>Date</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="80fc6081-3161-4a25-b32c-e32cc081213f"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+  </attributes>
+  <dimensions>
+    <dimension id="e0df4aa8-819a-4ca2-6a26-5ed711e0e95d" name="Dim Date">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Time</dimension-type>
+      </properties>
+      <hierarchy id="8413b582-bb8d-4975-bc78-542558b045cc" name="Date Hierarchy">
+        <properties>
+          <caption>Date Hierarchy</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="4b3b16dc-de40-40b7-4e25-78117564c89d">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>false</visible>
+            <level-type>TimeUndefined</level-type>
+          </properties>
+        </level>
+        <level primary-attribute="2980857d-bd87-4b13-7488-9652cc6a32d0">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeDays</level-type>
+          </properties>
+        </level>
+      </hierarchy>
+      <hierarchy id="b5c4ab51-3989-4582-9608-94cb7c1c4091" name="Date Month Hierarchy">
+        <properties>
+          <caption>Date Month Hierarchy</caption>
+          <visible>true</visible>
+          <filter-empty>Yes</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="f3ab70bd-266c-4b46-6bdb-35e04da0d7c6">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeYears</level-type>
+          </properties>
+          <keyed-attribute-ref attribute-id="4f6b0f73-b63a-47d1-7094-bd58b6ec6b65">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+        <level primary-attribute="630fa58f-2d94-4fa5-637c-13df54fbf596">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeMonths</level-type>
+          </properties>
+          <keyed-attribute-ref attribute-id="d391ac9d-3c81-415b-7e76-703766107d88">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+        <level primary-attribute="2980857d-bd87-4b13-7488-9652cc6a32d0">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeDays</level-type>
+          </properties>
+          <keyed-attribute-ref attribute-id="9b964d8f-8ad1-4930-55ea-8338d8521dd6">
+            <properties>
+              <multiplicity></multiplicity>
+              <equivalent-attribute-ref attribute-id="2980857d-bd87-4b13-7488-9652cc6a32d0"></equivalent-attribute-ref>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+      </hierarchy>
+      <modeler-metadata>
+        <global-id></global-id>
+        <version>0</version>
+        <modified>false</modified>
+      </modeler-metadata>
+    </dimension>
+  </dimensions>
+  <data-sets>
+    <data-set id="8bc61ff1-5068-4017-6d01-e3de76b3c5eb" name="DIMDATE">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>AS_ADVENTURE</schema>
+          <name>DIMDATE</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>datekey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>fulldatealternatekey</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>daynumberofweek</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>englishdaynameofweek</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>daynumberofmonth</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>weeknumberofyear</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>englishmonthname</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>monthnumberofyear</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>calendarquarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>calendaryear</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>superTop</name>
+          <sql>1</sql>
+          <type>Decimal(1,0)</type>
+        </column>
+        <column>
+          <name>yearInt</name>
+          <sql>cast(&#34;calendaryear&#34; as INT)</sql>
+          <type>Decimal(38,0)</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="9377052b-c91e-4f13-ac1a-239045d21853" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="d99488d0-38c3-4664-a646-1971a1e43a66" unique="false" complete="true">
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="3d6b3bc7-9eb1-4f04-b937-51583ce5a15c" unique="false" complete="true">
+          <column>superTop</column>
+        </key-ref>
+        <key-ref id="38512a26-4837-484f-8eda-9f12e1828c38" unique="false" complete="true">
+          <column>monthnumberofyear</column>
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="4b588c23-bf60-4220-9698-7bf3dd8c33c3" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="a4e761d5-c06b-4e57-b48a-f953a9d53132" unique="false" complete="true">
+          <column>monthnumberofyear</column>
+        </key-ref>
+        <key-ref id="c2ceccc2-ad8d-40a0-8e94-0296c0be69e6" unique="false" complete="true">
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="10786a08-77d6-4d7f-be63-29a1e52fa099" unique="false" complete="true">
+          <column>monthnumberofyear</column>
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="88cd7cc2-dda0-4bb8-bebb-139b9eefeacd" unique="false" complete="true">
+          <column>monthnumberofyear</column>
+        </key-ref>
+        <key-ref id="faeb83fa-0769-4f6a-b18b-1f3fe3d04069" unique="false" complete="true">
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="11e475eb-bd2f-4e84-916a-e624f8bf6154" unique="false" complete="true">
+          <column>calendaryear</column>
+        </key-ref>
+        <key-ref id="69ad4074-a4f9-486d-8d08-fac57ce6d402" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="80fc6081-3161-4a25-b32c-e32cc081213f" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <attribute-ref id="2980857d-bd87-4b13-7488-9652cc6a32d0" complete="true">
+          <column>fulldatealternatekey</column>
+        </attribute-ref>
+        <attribute-ref id="f3ab70bd-266c-4b46-6bdb-35e04da0d7c6" complete="true">
+          <column>calendaryear</column>
+        </attribute-ref>
+        <attribute-ref id="4b3b16dc-de40-40b7-4e25-78117564c89d" complete="true">
+          <column>superTop</column>
+        </attribute-ref>
+        <attribute-ref id="630fa58f-2d94-4fa5-637c-13df54fbf596" complete="true">
+          <column>englishmonthname</column>
+        </attribute-ref>
+        <attribute-ref id="d391ac9d-3c81-415b-7e76-703766107d88" complete="true">
+          <column>englishmonthname</column>
+        </attribute-ref>
+        <attribute-ref id="4f6b0f73-b63a-47d1-7094-bd58b6ec6b65" complete="true">
+          <column>calendaryear</column>
+        </attribute-ref>
+        <attribute-ref id="9b964d8f-8ad1-4930-55ea-8338d8521dd6" complete="true">
+          <column>fulldatealternatekey</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="fc853f46-502e-48cb-5f54-3e0a65b648c9" name="STOCK_MOVEMENTS">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>MM_TABLES</schema>
+          <name>STOCK_MOVEMENTS</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>PLANT</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>WAREHOUSE</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>MATERIAL</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>COLOR</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>DATE</name>
+          <type>Decimal(8,0)</type>
+        </column>
+        <column>
+          <name>INGRESS</name>
+          <type>Decimal(1,0)</type>
+        </column>
+        <column>
+          <name>ISSUE</name>
+          <type>Decimal(1,0)</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="c2d17d23-429d-46cf-b57c-6fe9f8b6f0c6" unique="false" complete="true">
+          <column>MATERIAL</column>
+        </key-ref>
+        <key-ref id="2fbc746b-97ba-4203-a230-29312a0eba0f" unique="false" complete="true">
+          <column>MATERIAL</column>
+        </key-ref>
+        <attribute-ref id="c98ab5a4-64f5-4b6f-549c-77357129cd2d" complete="true">
+          <column>MATERIAL</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+  </data-sets>
+  <calculated-members>
+    <calculated-member id="e41a14a5-2c5a-44b9-60d8-0d59ea34bf71" name="Stockbalance">
+      <properties>
+        <caption>Stockbalance</caption>
+        <visible>true</visible>
+      </properties>
+      <expression>[Measures].[m_INGRESS_sum] -[Measures].[m_ISSUE_sum]</expression>
+    </calculated-member>
+    <calculated-member id="5c888f03-2a29-42db-66a2-6b3a86dbb09b" name="Stockbalance cumulativ">
+      <properties>
+        <caption>Stockbalance cumulativ</caption>
+        <visible>true</visible>
+      </properties>
+      <expression>sum(&#xA;    PeriodsToDate(&#xA;        [Dim Date].[Date Hierarchy].[SuperTopLevel],&#xA;        [Dim Date].[Date Hierarchy].currentMember&#xA;        ),&#xA;    [Measures].[Stockbalance]&#xA;)</expression>
+    </calculated-member>
+  </calculated-members>
+  <cubes>
+    <cube id="defb2fa7-39a1-4fe7-4ac6-c4493966de4d" name="Stockmovement">
+      <properties>
+        <visible>false</visible>
+      </properties>
+      <attributes>
+        <attribute-key id="d855a675-2496-41c7-ac41-f4067623aaef">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="7adabcaa-34d7-4e82-9767-c06b68b17e14">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="67e2fbb3-3770-47ab-8ed6-e12cb811ad96">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <attribute-key id="3029cbbb-fdd4-445e-8a56-72b68c36bdad">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <keyed-attribute id="14e1ec33-2b77-440a-a4f2-5915a2873310" key-ref="d855a675-2496-41c7-ac41-f4067623aaef" name="Plant Level">
+          <properties>
+            <caption>Plant Level</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="7126d788-5f25-4bdb-9bd5-90f87344a5f2" key-ref="7adabcaa-34d7-4e82-9767-c06b68b17e14" name="Ware House Level">
+          <properties>
+            <caption>Ware House Level</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="2d7a2f8c-537d-485b-af69-a075ee977fed" key-ref="67e2fbb3-3770-47ab-8ed6-e12cb811ad96" name="Material Level">
+          <properties>
+            <caption>Material</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+            <ordering>
+              <sort-key>
+                <order>ascending</order>
+                <value></value>
+              </sort-key>
+            </ordering>
+            <allowed-calculation-types></allowed-calculation-types>
+          </properties>
+        </keyed-attribute>
+        <keyed-attribute id="251c0106-f834-4101-ab26-8d5d21368000" key-ref="3029cbbb-fdd4-445e-8a56-72b68c36bdad" name="Color Level">
+          <properties>
+            <caption>Color Level</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+          </properties>
+        </keyed-attribute>
+        <attribute id="3e0d0f47-4e68-4df1-882e-e8782dc09155" name="m_INGRESS_sum">
+          <properties>
+            <caption>Ingress</caption>
+            <visible>true</visible>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+        <attribute id="4d2f2288-798d-497b-acaa-d654428457f8" name="m_ISSUE_sum">
+          <properties>
+            <caption>Issue</caption>
+            <visible>true</visible>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+      </attributes>
+      <dimensions>
+        <dimension id="6efd956a-286c-43fb-a62a-cd30d5a9a3cc" name="Plant">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="16665251-edcd-454c-bf3c-5d7b3f71c556" name="Plant Hierarchy">
+            <properties>
+              <caption>Plant Hierarchy</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="14e1ec33-2b77-440a-a4f2-5915a2873310">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+          <modeler-metadata>
+            <global-id></global-id>
+            <version>0</version>
+            <modified>false</modified>
+          </modeler-metadata>
+        </dimension>
+        <dimension id="c48cfe7b-2cb1-4067-ae8a-0f352884539e" name="Warehouse">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="017e3cd7-60b0-4340-9362-12adebdd1f04" name="Ware House Hierarchy">
+            <properties>
+              <caption>Ware House Hierarchy</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="7126d788-5f25-4bdb-9bd5-90f87344a5f2">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+          <modeler-metadata>
+            <global-id></global-id>
+            <version>0</version>
+            <modified>false</modified>
+          </modeler-metadata>
+        </dimension>
+        <dimension id="a0262828-6638-4182-81e3-9f2988757ac5" name="Material">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="d0afb734-fefb-4668-9af4-86d3694530e8" name="Material Hierarchy">
+            <properties>
+              <caption>Material Hierarchy</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="2d7a2f8c-537d-485b-af69-a075ee977fed">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+              <keyed-attribute-ref attribute-id="c98ab5a4-64f5-4b6f-549c-77357129cd2d">
+                <properties>
+                  <multiplicity></multiplicity>
+                </properties>
+              </keyed-attribute-ref>
+            </level>
+          </hierarchy>
+          <modeler-metadata>
+            <global-id></global-id>
+            <version>0</version>
+            <modified>false</modified>
+          </modeler-metadata>
+        </dimension>
+        <dimension id="4c4de464-a6f8-4de2-818c-6758e056d928" name="Color">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="32d5e34c-fb98-4fe2-9a07-f3bcae1d4f92" name="Color Hierarchy">
+            <properties>
+              <caption>Color Hierarchy</caption>
+              <visible>true</visible>
+              <filter-empty>Always</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="251c0106-f834-4101-ab26-8d5d21368000">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+          <modeler-metadata>
+            <global-id></global-id>
+            <version>0</version>
+            <modified>false</modified>
+          </modeler-metadata>
+        </dimension>
+      </dimensions>
+      <actions>
+        <properties>
+          <include-default-drill-through>true</include-default-drill-through>
+        </properties>
+      </actions>
+      <data-sets>
+        <data-set-ref id="fc853f46-502e-48cb-5f54-3e0a65b648c9">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <key-ref id="d855a675-2496-41c7-ac41-f4067623aaef" unique="false" complete="true">
+              <column>PLANT</column>
+            </key-ref>
+            <key-ref id="7adabcaa-34d7-4e82-9767-c06b68b17e14" unique="false" complete="true">
+              <column>WAREHOUSE</column>
+            </key-ref>
+            <key-ref id="67e2fbb3-3770-47ab-8ed6-e12cb811ad96" unique="false" complete="true">
+              <column>MATERIAL</column>
+            </key-ref>
+            <key-ref id="3029cbbb-fdd4-445e-8a56-72b68c36bdad" unique="false" complete="true">
+              <column>COLOR</column>
+            </key-ref>
+            <key-ref id="9377052b-c91e-4f13-ac1a-239045d21853" unique="false" complete="false">
+              <column>DATE</column>
+            </key-ref>
+            <attribute-ref id="14e1ec33-2b77-440a-a4f2-5915a2873310" complete="true">
+              <column>PLANT</column>
+            </attribute-ref>
+            <attribute-ref id="7126d788-5f25-4bdb-9bd5-90f87344a5f2" complete="true">
+              <column>WAREHOUSE</column>
+            </attribute-ref>
+            <attribute-ref id="2d7a2f8c-537d-485b-af69-a075ee977fed" complete="true">
+              <column>MATERIAL</column>
+            </attribute-ref>
+            <attribute-ref id="251c0106-f834-4101-ab26-8d5d21368000" complete="true">
+              <column>COLOR</column>
+            </attribute-ref>
+            <attribute-ref id="3e0d0f47-4e68-4df1-882e-e8782dc09155" complete="true">
+              <column>INGRESS</column>
+            </attribute-ref>
+            <attribute-ref id="4d2f2288-798d-497b-acaa-d654428457f8" complete="true">
+              <column>ISSUE</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+      </data-sets>
+      <calculated-members>
+        <calculated-member-ref id="e41a14a5-2c5a-44b9-60d8-0d59ea34bf71"></calculated-member-ref>
+        <calculated-member-ref id="5c888f03-2a29-42db-66a2-6b3a86dbb09b"></calculated-member-ref>
+      </calculated-members>
+      <aggregates></aggregates>
+    </cube>
+  </cubes>
+</schema>
