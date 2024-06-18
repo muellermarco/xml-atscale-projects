@@ -1,0 +1,21 @@
+{
+	"aggregates": {
+		"count": 0,
+		"values": [
+
+		]
+	},
+	"atScaleExportVersion": "2024.1.0",
+	"exportCubeId": "8db17af6-56d6-4751-46b7-ac0271996dad",
+	"exportOrgId": "default",
+	"exportProjectId": "db6dfd32-ff05-4266-5cb8-b484072b6bce",
+	"exportSummary": {
+		"connectionIds": {
+			"count": 0,
+			"values": [
+
+			]
+		}
+	},
+	"exportTimestamp": "2024-06-18T16:00:35.918742662Z[UTC]"
+}

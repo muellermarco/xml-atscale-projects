@@ -1,0 +1,3773 @@
+{
+	"aggregates": {
+		"count": 7,
+		"values": [
+			{
+				"activeInstanceId": "beee6e16-a107-4ff1-ae88-2d26a61e4a4c",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-01-09T10:20:02.709403Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "ef5648fa-e4c9-4a42-8790-6d5714ab6e72",
+				"latestInstanceId": "beee6e16-a107-4ff1-ae88-2d26a61e4a4c",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c2",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "a5c72e47-d3b3-4024-a7e6-b19a132f1163"
+			},
+			{
+				"activeInstanceId": "35405d63-6c38-4b5a-815c-3ff669ae45bd",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-01-09T10:20:02.759419Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "5ad4ce9d-297c-4948-82bd-43b130da69fa",
+				"latestInstanceId": "35405d63-6c38-4b5a-815c-3ff669ae45bd",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "fcbf6329-8833-448f-8bac-78cc3f1ffd7c",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c2",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "a5c72e47-d3b3-4024-a7e6-b19a132f1163"
+			},
+			{
+				"activeInstanceId": "32c88ede-51ad-407f-8d49-a0cc189e5ccb",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-01-09T10:48:24.384070Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "606d8780-d332-4451-b73e-bbaf774b949a",
+				"latestInstanceId": "32c88ede-51ad-407f-8d49-a0cc189e5ccb",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "013ea605-b31c-430c-a02e-a54bfc95a87d",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "bfcf68d4-4b6c-473f-b7ae-d3a1369097f1",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c2",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c26",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "5ec4dac2-dd1e-498a-8061-ebe1c9e5a81a"
+			},
+			{
+				"activeInstanceId": "39b848d9-26df-4e27-b72a-b8645cdfa14d",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-03-20T12:35:32.742124Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "56dfedb3-e377-4a02-a585-9cb7ff880713",
+				"latestInstanceId": "39b848d9-26df-4e27-b72a-b8645cdfa14d",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c2",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": {
+												"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+											},
+											"id": "ce843510-a765-40d2-6529-dc8ab97303e0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "color_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "Color",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c26",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c27",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "f58ca69a-b0aa-49e5-878d-12fb5bc6b69e"
+			},
+			{
+				"activeInstanceId": "9f4bd3ae-2a34-4689-87ce-7834993dd497",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-03-20T15:50:54.115854Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "23083efb-640c-4bb3-b085-9a339ac769ac",
+				"latestInstanceId": "9f4bd3ae-2a34-4689-87ce-7834993dd497",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c2",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "a61e6302-b896-4c21-ae6f-b60852d6719c",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "lastproductunitprice_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "lastproductunitprice",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "lastproductunitprice_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "lastproductunitprice",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "lastproductunitprice_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "lastproductunitprice",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c26",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c27",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c28",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c29",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "b05c5cc2-a077-440c-a911-7481ec4e42aa"
+			},
+			{
+				"activeInstanceId": "aa5f40a3-0473-464d-a2c9-00fec69fece8",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-03-20T13:16:08.276720Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "bb3904ff-94d0-43df-9431-b16a281d0e81",
+				"latestInstanceId": "aa5f40a3-0473-464d-a2c9-00fec69fece8",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c2",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "e41a7aa7-2848-4e71-88a3-0abb2284c805",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "currency_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "currency",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c26",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c27",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "f79dba3b-ca37-4159-bb7f-16888a927e20"
+			},
+			{
+				"activeInstanceId": "681af0d4-d9e3-42f2-aaa8-0133d73f2336",
+				"baseType": "system_defined",
+				"blocked": false,
+				"connectionId": "ck01391.us-east-2.aws.snowflakecomputing.com",
+				"createdAt": "2024-05-21T09:05:28.449472Z",
+				"cubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+				"id": "1c3d7aba-a12e-4d45-b7ba-b96d263aaa32",
+				"latestInstanceId": "681af0d4-d9e3-42f2-aaa8-0133d73f2336",
+				"notes": {
+					"dimensional": false
+				},
+				"organizationId": "default",
+				"planJson": {
+					"cube": {
+						"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+					},
+					"hints": [
+
+					],
+					"selection": {
+						"columns": [
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c1",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "7e509dab-7781-4d7a-afca-0b48384468f0",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+												{
+													"ref-id": "c62150ce-3035-43bf-8a21-906560404d2b",
+													"type": "reuse-ref"
+												}
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"type": "aggregate-grouped"
+								},
+								"alias": "key_c2",
+								"type": "select-column",
+								"value": {
+									"cube": {
+										"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+									},
+									"key": {
+										"key": {
+											"cube": null,
+											"id": "e41a7aa7-2848-4e71-88a3-0abb2284c805",
+											"type": "key"
+										},
+										"ref-path": {
+											"refs": [
+
+											],
+											"type": "ref-path"
+										},
+										"type": "flat-key"
+									},
+									"type": "key-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c3",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c4",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "minorderdate_c5",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "MinOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c6",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c7",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "calculatedtax1_c8",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "calculatedtax1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c9",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c10",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxorderdate_c11",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxOrderDate",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c12",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c13",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "maxtaxamount1_c14",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "maxtaxamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c15",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c16",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "orderquantity1_c17",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "orderquantity1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c18",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MIN",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c19",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "MAX",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "salesamount1_c20",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "salesamount1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountav_c21",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c22",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountAvg1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "SUM",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "sumattrname_salesamountss_c23",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "countattrname_salesamount_c24",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__COUNTATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"already-squared": true,
+									"type": "sum-of-squares"
+								},
+								"alias": "sumofsquaresattrname_sale_c25",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "__SUMOFSQUARESATTRNAME__salesamountsstdev1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							},
+							{
+								"aggregation-type": {
+									"name": "COUNT",
+									"type": "aggregate-simple-function"
+								},
+								"alias": "soldproductndc1_c26",
+								"type": "select-column",
+								"value": {
+									"attribute": {
+										"cube": {
+											"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+										},
+										"name": "soldproductNDC1",
+										"type": "attribute"
+									},
+									"type": "attribute-value"
+								}
+							}
+						],
+						"from": {
+							"cube": {
+								"id": "b89a2fb7-74f4-4828-706e-70f7186e10a0"
+							},
+							"type": "cube-data-selection"
+						},
+						"limit": null,
+						"order": [
+
+						],
+						"type": "select-columns"
+					},
+					"type": "logical-plan"
+				},
+				"projectId": "3d965074-0e49-42df-4151-74541f019bd0",
+				"promoted": false,
+				"subType": "demand_defined",
+				"triggeringQueryId": "c88565b3-91eb-44bb-9a05-b382d3dc1807"
+			}
+		]
+	},
+	"atScaleExportVersion": "2024.1.0",
+	"exportCubeId": "b89a2fb7-74f4-4828-706e-70f7186e10a0",
+	"exportOrgId": "default",
+	"exportProjectId": "3d965074-0e49-42df-4151-74541f019bd0",
+	"exportSummary": {
+		"connectionIds": {
+			"count": 1,
+			"values": [
+				"ck01391.us-east-2.aws.snowflakecomputing.com"
+			]
+		}
+	},
+	"exportTimestamp": "2024-06-18T16:09:53.935400786Z[UTC]"
+}
