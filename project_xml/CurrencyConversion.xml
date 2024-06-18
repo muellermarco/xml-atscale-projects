@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.atscale.com/xsd/project_2_0" name="CurrencyConversion" version="2" xsi:schemaLocation="http://www.atscale.com/xsd/project_2_0 ../../../../../core/src/main/resources/com/atscale/engine/schema/project_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <annotations>
+    <annotation name="migrationVersion">2024.1.0.6834</annotation>
+    <annotation name="version">39</annotation>
+    <annotation name="engineId">ea343eba-1069-4003-49cd-b4673b1a6cef</annotation>
+    <annotation name="versionTag"></annotation>
+    <annotation name="publishDate">Published on May 29, 2024 at 1:42pm (UTC)</annotation>
+  </annotations>
+  <properties>
+    <caption>CurrencyConversion</caption>
+    <visible>true</visible>
+    <aggressive-aggregate-promotion>false</aggressive-aggregate-promotion>
+    <aggregate-prediction>
+      <speculative-aggregates>false</speculative-aggregates>
+    </aggregate-prediction>
+    <preferred-aggregate-stores></preferred-aggregate-stores>
+  </properties>
+  <attributes>
+    <attribute-key id="d224c3eb-6ad4-4923-bcad-5f38a9c99ca4">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="9d338340-e2dd-4d4e-8643-e3d214f1431a">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="b8a94b81-bc52-4d44-94e7-b3f48fb45a17">
+      <properties>
+        <visible>true</visible>
+        <columns>2</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="63cbb7ec-09fa-42e0-b48b-49ecd26353fa">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="473f7916-a617-4211-94c0-48d1685d80a7">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="8684eb59-e18a-4268-8190-7c65ff3639b1">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="6a66eafa-8928-4a62-b821-cd8ffb9e1758">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="7e4a4753-a555-43f5-b452-fb8ca39825ff">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="a15e0ce5-ab8a-4adf-81d8-7a6ffdef9fa6">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="54da5c5c-cebd-4fbb-8274-fd9969fa6d6c">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="38877eb3-604b-464f-a140-7185cc53503a">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="6542090e-6cfa-4472-b318-079984062057">
+      <properties>
+        <visible>true</visible>
+        <columns>2</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="5a98e9aa-bc69-4b43-bac4-c812cf844f5f">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="8d7229a9-8d87-404c-be2d-025e2a514f7b">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="fb13db32-d4fb-4b16-9e25-21818668ba33">
+      <properties>
+        <visible>true</visible>
+        <columns>2</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="44d0cf17-8934-4f47-addb-660e5f83736d">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <attribute-key id="09bc9c63-cc27-43f6-8c92-647f2291ae72">
+      <properties>
+        <visible>true</visible>
+        <columns>1</columns>
+      </properties>
+    </attribute-key>
+    <keyed-attribute id="ca9733bc-1ea7-4129-5a07-e80e807d2a31" key-ref="d224c3eb-6ad4-4923-bcad-5f38a9c99ca4" name="Date">
+      <properties>
+        <caption>Date</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="63cbb7ec-09fa-42e0-b48b-49ecd26353fa"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types></allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="5b429c59-b713-4afc-588d-fb7b86adca99" key-ref="9d338340-e2dd-4d4e-8643-e3d214f1431a" name="Year1">
+      <properties>
+        <caption>Year</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="8684eb59-e18a-4268-8190-7c65ff3639b1"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="56af3f1b-53b3-41c9-7cc6-168969e4939c" key-ref="b8a94b81-bc52-4d44-94e7-b3f48fb45a17" name="Month1">
+      <properties>
+        <caption>Month</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <key-ref id="473f7916-a617-4211-94c0-48d1685d80a7"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+          <calculation-type>PeriodsToDate</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="f839cd88-a703-4c9a-6690-dbe95f82ce1f" key-ref="6a66eafa-8928-4a62-b821-cd8ffb9e1758" name="Currency">
+      <properties>
+        <caption>Currency</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types></allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="abc89440-36a7-435d-6612-4232b85475cb" key-ref="7e4a4753-a555-43f5-b452-fb8ca39825ff" name="d_Currency Base">
+      <properties>
+        <caption>Currency Base</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="a15e0ce5-ab8a-4adf-81d8-7a6ffdef9fa6"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="3b2d3bc2-3b97-4934-51f7-829a3fad7e58" key-ref="54da5c5c-cebd-4fbb-8274-fd9969fa6d6c" name="d_currencykey">
+      <properties>
+        <caption>Currency Key</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="38877eb3-604b-464f-a140-7185cc53503a"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="f4bc4e66-4553-4c41-69f4-dd92e42433ec" key-ref="6542090e-6cfa-4472-b318-079984062057" name="Fact Currency Rate From To Level">
+      <properties>
+        <caption>Fact Currency Rate From To Level</caption>
+        <visible>false</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types></allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="bad0b44f-e52c-4996-6c19-54289d07cb36" key-ref="5a98e9aa-bc69-4b43-bac4-c812cf844f5f" name="d_currencyname">
+      <properties>
+        <caption>Currency Name</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="8d7229a9-8d87-404c-be2d-025e2a514f7b"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="342c61be-d715-4851-6502-10ef97f3969a" key-ref="fb13db32-d4fb-4b16-9e25-21818668ba33" name="Dim Currency Level">
+      <properties>
+        <caption>Dim Currency Level</caption>
+        <visible>false</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <value></value>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+          <calculation-type>ParallelPeriod</calculation-type>
+          <calculation-type>Ancestor</calculation-type>
+          <calculation-type>Descendants</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+    <keyed-attribute id="ebc7ac1b-b65d-42f6-5248-f59703333217" key-ref="44d0cf17-8934-4f47-addb-660e5f83736d" name="d_currencyalternatekey">
+      <properties>
+        <caption>Currency ISO</caption>
+        <visible>true</visible>
+        <type>
+          <enum></enum>
+        </type>
+        <ordering>
+          <sort-key>
+            <order>ascending</order>
+            <key-ref id="09bc9c63-cc27-43f6-8c92-647f2291ae72"></key-ref>
+          </sort-key>
+        </ordering>
+        <allowed-calculation-types>
+          <calculation-type>Lag</calculation-type>
+          <calculation-type>Siblings</calculation-type>
+          <calculation-type>Range</calculation-type>
+        </allowed-calculation-types>
+      </properties>
+    </keyed-attribute>
+  </attributes>
+  <dimensions>
+    <dimension id="bc2b2133-97bb-434c-72c0-8a24a06fe185" name="Dim Date">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Time</dimension-type>
+      </properties>
+      <hierarchy id="04af358c-4b14-4afd-a206-5f959c08a7dc" name="Date Month Hierarchy">
+        <properties>
+          <caption>Date Month Hierarchy</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="5b429c59-b713-4afc-588d-fb7b86adca99">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeYears</level-type>
+          </properties>
+        </level>
+        <level primary-attribute="56af3f1b-53b3-41c9-7cc6-168969e4939c">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeMonths</level-type>
+          </properties>
+        </level>
+        <level primary-attribute="ca9733bc-1ea7-4129-5a07-e80e807d2a31">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+            <level-type>TimeDays</level-type>
+          </properties>
+        </level>
+      </hierarchy>
+      <modeler-metadata>
+        <global-id></global-id>
+        <version>0</version>
+        <modified>false</modified>
+      </modeler-metadata>
+    </dimension>
+    <dimension id="14f38281-004b-4ff7-6a54-88649ccb2c78" name="Dim Currency Rate">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="985706b6-dca1-4a95-9ec0-9af1cede109e" name="Dim CurrencyRate Hierarchy">
+        <properties>
+          <caption>Dim CurrencyRate</caption>
+          <visible>true</visible>
+          <filter-empty>Yes</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="342c61be-d715-4851-6502-10ef97f3969a">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>false</visible>
+          </properties>
+          <keyed-attribute-ref attribute-id="f839cd88-a703-4c9a-6690-dbe95f82ce1f" ref-id="c69ab74e-e27d-4030-8241-eed4701a8871">
+            <properties>
+              <ref-path>
+                <new-ref ref-id="c69ab74e-e27d-4030-8241-eed4701a8871">
+                  <ref-naming>{0} From</ref-naming>
+                </new-ref>
+              </ref-path>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="ca9733bc-1ea7-4129-5a07-e80e807d2a31" ref-id="ee7d6640-fc67-46bf-8375-b9ca6c5b4a11">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+      </hierarchy>
+      <modeler-metadata>
+        <global-id></global-id>
+        <version>0</version>
+        <modified>false</modified>
+      </modeler-metadata>
+    </dimension>
+    <dimension id="ba385b65-e220-4da4-5ce9-3baed9522b75" name="Dim Currency">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="adbf14a6-44bd-4b5d-92aa-9ad889b91153" name="Dim Currency Hierarchy">
+        <properties>
+          <caption>Dim Currency Hierarchy</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="f839cd88-a703-4c9a-6690-dbe95f82ce1f">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>true</visible>
+          </properties>
+          <keyed-attribute-ref attribute-id="abc89440-36a7-435d-6612-4232b85475cb">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="3b2d3bc2-3b97-4934-51f7-829a3fad7e58">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="bad0b44f-e52c-4996-6c19-54289d07cb36">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="ebc7ac1b-b65d-42f6-5248-f59703333217">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+      </hierarchy>
+      <modeler-metadata>
+        <global-id></global-id>
+        <version>0</version>
+        <modified>false</modified>
+      </modeler-metadata>
+    </dimension>
+    <dimension id="74fc1f87-df6c-4323-7e4a-b43811b39422" name="Fact Currency Rate From To">
+      <properties>
+        <visible>true</visible>
+        <dimension-type>Other</dimension-type>
+      </properties>
+      <hierarchy id="7b28aa57-30a0-499b-8d4b-a5d2994b96b5" name="Fact Currency Rate From To Hierarchy">
+        <properties>
+          <caption>Fact Currency Rate From To Hierarchy</caption>
+          <visible>true</visible>
+          <filter-empty>Always</filter-empty>
+          <default-member>
+            <all-member></all-member>
+          </default-member>
+        </properties>
+        <level primary-attribute="f4bc4e66-4553-4c41-69f4-dd92e42433ec">
+          <properties>
+            <unique-in-parent>false</unique-in-parent>
+            <visible>false</visible>
+          </properties>
+          <keyed-attribute-ref attribute-id="f839cd88-a703-4c9a-6690-dbe95f82ce1f" ref-id="88fad44c-16db-44cc-9e30-bb9f1baa42ff">
+            <properties>
+              <ref-path>
+                <new-ref ref-id="88fad44c-16db-44cc-9e30-bb9f1baa42ff">
+                  <ref-naming>{0} To</ref-naming>
+                </new-ref>
+              </ref-path>
+              <multiplicity>
+                <multi-valued>true</multi-valued>
+              </multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="ca9733bc-1ea7-4129-5a07-e80e807d2a31" ref-id="dbb9956c-010d-4cf7-84b8-cc8a1c339b4b">
+            <properties>
+              <multiplicity></multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+          <keyed-attribute-ref attribute-id="f839cd88-a703-4c9a-6690-dbe95f82ce1f" ref-id="29c93513-c6b6-4176-8043-b9403b6b543f">
+            <properties>
+              <ref-path>
+                <new-ref ref-id="29c93513-c6b6-4176-8043-b9403b6b543f">
+                  <ref-naming>{0} From</ref-naming>
+                </new-ref>
+              </ref-path>
+              <multiplicity>
+                <multi-valued>true</multi-valued>
+              </multiplicity>
+            </properties>
+          </keyed-attribute-ref>
+        </level>
+      </hierarchy>
+      <modeler-metadata>
+        <global-id></global-id>
+        <version>0</version>
+        <modified>false</modified>
+      </modeler-metadata>
+    </dimension>
+  </dimensions>
+  <data-sets>
+    <data-set id="da26bdc6-6e8e-477c-425e-90d62ef44511" name="DATECUSTOM">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>AS_ADVENTURE</schema>
+          <name>DATECUSTOM</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>pk_date</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>datekey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>date_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>year</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>half_year</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>quarter</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>month</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>month_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>week</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>day_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>day_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>day_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>day_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>day_of_quarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>day_of_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>day_of_month</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>day_of_month_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>day_of_week</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>day_of_week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>week_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>week_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>month_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>month_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>month_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>month_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>month_of_quarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>month_of_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>quarter_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>quarter_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>quarter_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>quarter_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>half_year_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>half_year_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_year</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_half_year</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_quarter</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_month</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_month_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_month_name2</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_week</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_day_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_day_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_day_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_of_quarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_day_of_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_of_month</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_day_of_month_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_of_week</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_day_of_week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_week_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_week_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_week_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_week_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_week_of_quarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_week_of_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_week_of_month</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_week_of_month_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_month_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_month_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_month_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_month_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_month_of_quarter</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_month_of_quarter_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_quarter_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_quarter_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_quarter_of_half_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_quarter_of_half_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_half_year_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>rpt_half_year_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_year</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>iso_8601_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_week</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>iso_8601_week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_day</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>iso_8601_day_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_day_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>iso_8601_day_of_year_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_day_of_week</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>iso_8601_day_of_week_name</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>iso_8601_week_of_year</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>iso_8601_wk_yr_nm_rpt_dy_ctl</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>rpt_day_lykey</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_week_ctl</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_week_lykey</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_month_lykey</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_quarter_lykey</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_half_year_lykey</name>
+          <type>DateTime</type>
+        </column>
+        <column>
+          <name>rpt_year_lykey</name>
+          <type>DateTime</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="d224c3eb-6ad4-4923-bcad-5f38a9c99ca4" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="9d338340-e2dd-4d4e-8643-e3d214f1431a" unique="false" complete="true">
+          <column>year</column>
+        </key-ref>
+        <key-ref id="b8a94b81-bc52-4d44-94e7-b3f48fb45a17" unique="false" complete="true">
+          <column>month</column>
+          <column>year</column>
+        </key-ref>
+        <key-ref id="63cbb7ec-09fa-42e0-b48b-49ecd26353fa" unique="false" complete="true">
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="473f7916-a617-4211-94c0-48d1685d80a7" unique="false" complete="true">
+          <column>month</column>
+        </key-ref>
+        <key-ref id="8684eb59-e18a-4268-8190-7c65ff3639b1" unique="false" complete="true">
+          <column>year</column>
+        </key-ref>
+        <attribute-ref id="ca9733bc-1ea7-4129-5a07-e80e807d2a31" complete="true">
+          <column>date_name</column>
+        </attribute-ref>
+        <attribute-ref id="5b429c59-b713-4afc-588d-fb7b86adca99" complete="true">
+          <column>year_name</column>
+        </attribute-ref>
+        <attribute-ref id="56af3f1b-53b3-41c9-7cc6-168969e4939c" complete="true">
+          <column>month</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="f3af9cce-f157-49cd-6ae5-bd0091c95aba" name="DIMCURRENCY">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <query>
+          <sql>Select &#xA;cur.&#34;currencykey&#34;&#xA;,cur.&#34;currencyname&#34;&#xA;,cur.&#34;currencyalternatekey&#34;&#xA;from &#xA;se_demo_library.as_adventure.dimcurrency cur&#xA;join se_demo_library.as_adventure.factinternetsales fact&#xA;on cur.&#34;currencykey&#34; = fact.&#34;currencykey&#34;&#xA;group by&#xA;1,2,3</sql>
+        </query>
+        <immutable>false</immutable>
+        <column>
+          <name>currencykey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>currencyalternatekey</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>currencyname</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>Currency Base</name>
+          <sql>&#39;USD&#39;</sql>
+          <type>String</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="6a66eafa-8928-4a62-b821-cd8ffb9e1758" unique="false" complete="true">
+          <column>currencykey</column>
+        </key-ref>
+        <key-ref id="7e4a4753-a555-43f5-b452-fb8ca39825ff" unique="false" complete="true">
+          <column>Currency Base</column>
+        </key-ref>
+        <key-ref id="a15e0ce5-ab8a-4adf-81d8-7a6ffdef9fa6" unique="false" complete="true">
+          <column>Currency Base</column>
+        </key-ref>
+        <key-ref id="54da5c5c-cebd-4fbb-8274-fd9969fa6d6c" unique="false" complete="true">
+          <column>currencykey</column>
+        </key-ref>
+        <key-ref id="38877eb3-604b-464f-a140-7185cc53503a" unique="false" complete="true">
+          <column>currencykey</column>
+        </key-ref>
+        <key-ref id="5a98e9aa-bc69-4b43-bac4-c812cf844f5f" unique="false" complete="true">
+          <column>currencyname</column>
+        </key-ref>
+        <key-ref id="8d7229a9-8d87-404c-be2d-025e2a514f7b" unique="false" complete="true">
+          <column>currencyname</column>
+        </key-ref>
+        <key-ref id="44d0cf17-8934-4f47-addb-660e5f83736d" unique="false" complete="true">
+          <column>currencyalternatekey</column>
+        </key-ref>
+        <key-ref id="09bc9c63-cc27-43f6-8c92-647f2291ae72" unique="false" complete="true">
+          <column>currencyalternatekey</column>
+        </key-ref>
+        <attribute-ref id="f839cd88-a703-4c9a-6690-dbe95f82ce1f" complete="true">
+          <column>currencyalternatekey</column>
+        </attribute-ref>
+        <attribute-ref id="abc89440-36a7-435d-6612-4232b85475cb" complete="true">
+          <column>Currency Base</column>
+        </attribute-ref>
+        <attribute-ref id="3b2d3bc2-3b97-4934-51f7-829a3fad7e58" complete="true">
+          <column>currencykey</column>
+        </attribute-ref>
+        <attribute-ref id="bad0b44f-e52c-4996-6c19-54289d07cb36" complete="true">
+          <column>currencyname</column>
+        </attribute-ref>
+        <attribute-ref id="ebc7ac1b-b65d-42f6-5248-f59703333217" complete="true">
+          <column>currencyalternatekey</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="86eda753-5f6a-4577-79dd-7046410e55ec" name="FACTCURRENCYRATE">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>AS_ADVENTURE</schema>
+          <name>FACTCURRENCYRATE</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>currencykey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>datekey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>averagerate</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>endofdayrate</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>fulldate</name>
+          <type>DateTime</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="fb13db32-d4fb-4b16-9e25-21818668ba33" unique="false" complete="true">
+          <column>currencykey</column>
+          <column>datekey</column>
+        </key-ref>
+        <key-ref id="6a66eafa-8928-4a62-b821-cd8ffb9e1758" unique="false" complete="false">
+          <ref-path>
+            <ref id="c69ab74e-e27d-4030-8241-eed4701a8871"></ref>
+          </ref-path>
+          <column>currencykey</column>
+        </key-ref>
+        <key-ref id="d224c3eb-6ad4-4923-bcad-5f38a9c99ca4" unique="false" complete="false">
+          <ref-path>
+            <ref id="ee7d6640-fc67-46bf-8375-b9ca6c5b4a11"></ref>
+          </ref-path>
+          <column>datekey</column>
+        </key-ref>
+        <attribute-ref id="342c61be-d715-4851-6502-10ef97f3969a" complete="true">
+          <column>datekey</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="63cdb23f-4395-4573-6b30-a017272d1ff2" name="FACTCURRENCYRATE_FROM_TO">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>AS_ADVENTURE</schema>
+          <name>FACTCURRENCYRATE_FROM_TO</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>CURRENCYKEY_FROM</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>CURRENCYKEY_TO</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>DATEKEY</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>AVARAGERATE</name>
+          <type>Double</type>
+        </column>
+      </physical>
+      <logical>
+        <key-ref id="6542090e-6cfa-4472-b318-079984062057" unique="false" complete="true">
+          <column>CURRENCYKEY_FROM</column>
+          <column>DATEKEY</column>
+        </key-ref>
+        <key-ref id="6a66eafa-8928-4a62-b821-cd8ffb9e1758" unique="false" complete="false">
+          <ref-path>
+            <ref id="88fad44c-16db-44cc-9e30-bb9f1baa42ff"></ref>
+          </ref-path>
+          <column>CURRENCYKEY_TO</column>
+        </key-ref>
+        <key-ref id="d224c3eb-6ad4-4923-bcad-5f38a9c99ca4" unique="false" complete="false">
+          <ref-path>
+            <ref id="dbb9956c-010d-4cf7-84b8-cc8a1c339b4b"></ref>
+          </ref-path>
+          <column>DATEKEY</column>
+        </key-ref>
+        <key-ref id="6a66eafa-8928-4a62-b821-cd8ffb9e1758" unique="false" complete="false">
+          <ref-path>
+            <ref id="29c93513-c6b6-4176-8043-b9403b6b543f"></ref>
+          </ref-path>
+          <column>CURRENCYKEY_FROM</column>
+        </key-ref>
+        <attribute-ref id="f4bc4e66-4553-4c41-69f4-dd92e42433ec" complete="true">
+          <column>DATEKEY</column>
+        </attribute-ref>
+      </logical>
+    </data-set>
+    <data-set id="7df9ecf6-ac20-401f-71ec-e41f69ae3ea1" name="FACTINTERNETSALES">
+      <properties>
+        <allow-aggregates>true</allow-aggregates>
+      </properties>
+      <physical>
+        <connection id="ck01391.us-east-2.aws.snowflakecomputing.com"></connection>
+        <table>
+          <database>SE_DEMO_LIBRARY</database>
+          <schema>AS_ADVENTURE</schema>
+          <name>FACTINTERNETSALES</name>
+        </table>
+        <immutable>false</immutable>
+        <column>
+          <name>salesordernumber</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>salesorderlinenumber</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>sales_reasons</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>productkey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>product_info</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>orderdatekey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>customerkey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>orderquantity</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>unitprice</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>salesamount</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>taxamt</name>
+          <type>Double</type>
+        </column>
+        <column>
+          <name>orderdate</name>
+          <type>String</type>
+        </column>
+        <column>
+          <name>shipdatekey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+        <column>
+          <name>currencykey</name>
+          <type>Decimal(38,0)</type>
+        </column>
+      </physical>
+      <logical></logical>
+    </data-set>
+  </data-sets>
+  <calculated-members>
+    <calculated-member id="f0321779-f134-4130-4ff1-97b4841e9485" name="Sales Amount Target">
+      <properties>
+        <caption>Sales Amount Target</caption>
+        <visible>true</visible>
+        <formatting>
+          <named-format>Standard</named-format>
+        </formatting>
+      </properties>
+      <expression>[Measures].[m_salesamount_sum]*[Measures].[m_AVARAGERATE_avg]</expression>
+    </calculated-member>
+    <calculated-member id="71d1db3a-ab61-45c4-400e-a042e5e97b6a" name="Sales Amount USD">
+      <properties>
+        <caption>Sales Amount USD</caption>
+        <visible>true</visible>
+        <formatting>
+          <named-format>Standard</named-format>
+        </formatting>
+      </properties>
+      <expression>[Measures].[m_salesamount_sum]*[Measures].[m_averagerate_avg]</expression>
+    </calculated-member>
+  </calculated-members>
+  <cubes>
+    <cube id="bcaa7e81-07b6-4f66-76db-35d73259487f" name="CurrencyConversion ManyToMany">
+      <properties>
+        <caption>CurrencyConversion ManyToMany</caption>
+        <visible>true</visible>
+      </properties>
+      <attributes>
+        <attribute-key id="75dc34cd-b7c8-4560-9055-57f6c4ae20db">
+          <properties>
+            <visible>true</visible>
+            <columns>1</columns>
+          </properties>
+        </attribute-key>
+        <keyed-attribute id="8a6b121c-75f9-44c6-8102-0f95e47f5736" key-ref="75dc34cd-b7c8-4560-9055-57f6c4ae20db" name="Rate">
+          <properties>
+            <caption>Rate</caption>
+            <visible>true</visible>
+            <type>
+              <enum></enum>
+            </type>
+            <ordering>
+              <sort-key>
+                <order>ascending</order>
+                <value></value>
+              </sort-key>
+            </ordering>
+            <allowed-calculation-types></allowed-calculation-types>
+          </properties>
+        </keyed-attribute>
+        <attribute id="45bbe3f7-3fc7-424c-98cd-2ca881753155" name="m_salesamount_sum">
+          <properties>
+            <caption>Sales Amount</caption>
+            <visible>true</visible>
+            <formatting>
+              <named-format>Standard</named-format>
+            </formatting>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+        <attribute id="03424586-e1c3-4d2b-aae4-6c520e89dba1" name="m_AVARAGERATE_avg">
+          <properties>
+            <caption>Avarage Rate</caption>
+            <visible>true</visible>
+            <formatting>
+              <named-format>Standard</named-format>
+            </formatting>
+            <type>
+              <measure>
+                <default-aggregation>AVG</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+      </attributes>
+      <dimensions>
+        <dimension id="c86517ee-a482-48c1-b401-bef78d15b090" name="Dim Rate">
+          <properties>
+            <visible>true</visible>
+          </properties>
+          <hierarchy id="16cc27b3-6ce7-4dea-9bce-fea18924a6cf" name="Avarage_Rate Hierarchy">
+            <properties>
+              <caption>Rate Hierarchy</caption>
+              <visible>true</visible>
+              <filter-empty>Yes</filter-empty>
+              <default-member>
+                <all-member></all-member>
+              </default-member>
+            </properties>
+            <level primary-attribute="8a6b121c-75f9-44c6-8102-0f95e47f5736">
+              <properties>
+                <unique-in-parent>false</unique-in-parent>
+                <visible>true</visible>
+              </properties>
+            </level>
+          </hierarchy>
+          <modeler-metadata>
+            <global-id></global-id>
+            <version>0</version>
+            <modified>false</modified>
+          </modeler-metadata>
+        </dimension>
+      </dimensions>
+      <actions>
+        <properties>
+          <include-default-drill-through>true</include-default-drill-through>
+        </properties>
+      </actions>
+      <data-sets>
+        <data-set-ref id="7df9ecf6-ac20-401f-71ec-e41f69ae3ea1">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <key-ref id="6542090e-6cfa-4472-b318-079984062057" unique="false" complete="false">
+              <column>currencykey</column>
+              <column>orderdatekey</column>
+            </key-ref>
+            <attribute-ref id="45bbe3f7-3fc7-424c-98cd-2ca881753155" complete="true">
+              <column>salesamount</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+        <data-set-ref id="63cdb23f-4395-4573-6b30-a017272d1ff2">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <key-ref id="75dc34cd-b7c8-4560-9055-57f6c4ae20db" unique="false" complete="true">
+              <column>AVARAGERATE</column>
+            </key-ref>
+            <attribute-ref id="8a6b121c-75f9-44c6-8102-0f95e47f5736" complete="true">
+              <column>AVARAGERATE</column>
+            </attribute-ref>
+            <attribute-ref id="03424586-e1c3-4d2b-aae4-6c520e89dba1" complete="true">
+              <column>AVARAGERATE</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+      </data-sets>
+      <calculated-members>
+        <calculated-member-ref id="f0321779-f134-4130-4ff1-97b4841e9485"></calculated-member-ref>
+      </calculated-members>
+      <aggregates></aggregates>
+    </cube>
+    <cube id="ee277ad3-0ea4-4224-5b5b-28a7d61feb3e" name="CurrencyConversion ManyToOne">
+      <properties>
+        <caption>CurrencyConversion ManyToOne</caption>
+        <visible>true</visible>
+      </properties>
+      <attributes>
+        <attribute id="fd9e9774-47a5-4270-a556-6749df31ebde" name="m_salesamount_sum">
+          <properties>
+            <caption>Sales Amount</caption>
+            <visible>true</visible>
+            <formatting>
+              <named-format>Standard</named-format>
+            </formatting>
+            <type>
+              <measure>
+                <default-aggregation>SUM</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+        <attribute id="d4b390be-be50-4bed-afc0-b4ceb5893311" name="m_averagerate_avg">
+          <properties>
+            <caption>Average Rate</caption>
+            <visible>true</visible>
+            <formatting>
+              <named-format>Standard</named-format>
+            </formatting>
+            <type>
+              <measure>
+                <default-aggregation>AVG</default-aggregation>
+              </measure>
+            </type>
+          </properties>
+        </attribute>
+      </attributes>
+      <dimensions></dimensions>
+      <actions>
+        <properties>
+          <include-default-drill-through>true</include-default-drill-through>
+        </properties>
+      </actions>
+      <data-sets>
+        <data-set-ref id="7df9ecf6-ac20-401f-71ec-e41f69ae3ea1">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <key-ref id="fb13db32-d4fb-4b16-9e25-21818668ba33" unique="false" complete="false">
+              <column>currencykey</column>
+              <column>orderdatekey</column>
+            </key-ref>
+            <attribute-ref id="fd9e9774-47a5-4270-a556-6749df31ebde" complete="true">
+              <column>salesamount</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+        <data-set-ref id="86eda753-5f6a-4577-79dd-7046410e55ec">
+          <properties>
+            <allow-aggregates>true</allow-aggregates>
+            <create-hinted-aggregate>false</create-hinted-aggregate>
+          </properties>
+          <logical>
+            <attribute-ref id="d4b390be-be50-4bed-afc0-b4ceb5893311" complete="true">
+              <column>averagerate</column>
+            </attribute-ref>
+          </logical>
+        </data-set-ref>
+      </data-sets>
+      <calculated-members>
+        <calculated-member-ref id="71d1db3a-ab61-45c4-400e-a042e5e97b6a"></calculated-member-ref>
+      </calculated-members>
+      <aggregates></aggregates>
+    </cube>
+  </cubes>
+</schema>
